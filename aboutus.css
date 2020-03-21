@@ -1,0 +1,179 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 14px;
+  color: #333;
+  background-color: #F7F9FB;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 12px;
+  height: 50px;
+}
+
+header .logo {
+  float: left;
+  background-color: #FFFFFF;
+  height: 36px;
+  width: 120px;
+}
+
+header .search {
+  float: right;
+}
+
+header .search input {
+  width: 200px;
+  height: 30px;
+  background-color: #555;
+  border: solid 1px #333;
+  padding-left: 8px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+main nav {
+  position: absolute;
+  top: -2em;
+  left: 10px;
+  width: 100%;
+}
+
+main nav ul {
+  height: 2rem;
+}
+
+main nav ul li {
+  font-size: 0.75rem;
+  float: left;
+  padding-right: 0.5em;
+}
+
+main nav ul li a {
+  color: #333;
+  padding-right: 0.5em;
+}
+
+main nav ul li a:hover {
+  color: #0094C0;
+}
+
+main nav ul li:after {
+  content: ">>";
+  color: #CCC;
+}
+
+main nav ul li:last-of-type::after {
+  content: "";
+}
+
+main .wapper {
+  position: relative;
+  border: 1px solid #BBB;
+  border-top: 5px solid #0094C0;
+  background-color: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .wapper h3 {
+  padding: 20px 50px;
+  font-size: 2rem;
+  font-weight: normal;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+main .wapper article {
+  border-top: 1px solid #BBB;
+  padding: 20px 50px;
+}
+
+main .wapper article section {
+  padding: 0 10px 20px 0;
+}
+
+main .wapper article section h4 {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+main .wapper article section .menb-card {
+  width: 100%;
+  height: 140px;
+  margin-bottom: 10px;
+  position: relative;
+  border: 1px solid #BBB;
+}
+
+main .wapper article section .menb-card .menb-intro {
+  position: absolute;
+  left: 45px;
+  top: 10px;
+}
+
+main .wapper article section .menb-card .menb-intro img {
+  width: 120px;
+  height: 120px;
+}
+
+main .wapper article section .menb-card .menb-intro .intro-cont {
+  position: absolute;
+  width: 450px;
+  left: 150px;
+  top: 5px;
+}
+
+main .wapper article section .menb-card .menb-intro .intro-cont div {
+  width: 100%;
+  margin-bottom: 2px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .wapper article section .menb-card .menb-intro .intro-cont div p {
+  display: inline-block;
+}
+
+main .wapper article section .decor-box {
+  width: 20%;
+  height: 100%;
+  background-color: #0094C0;
+  position: absolute;
+  right: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #E5E5E5;
+  height: 100px;
+}
+
+footer p {
+  color: #868686;
+  line-height: 100px;
+  text-align: center;
+}
+
+.wapper {
+  min-width: 900px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=aboutus.css.map */
