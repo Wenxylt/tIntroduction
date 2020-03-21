@@ -14,6 +14,7 @@ a{ text-decoration: none;}
 
 html{
     font-size: 14px;
+    font-family: PingFangSC-Regular,Verdana,Arial,"微软雅黑","宋体";
     color: $dark;
     background-color: #F7F9FB;
 }
@@ -21,6 +22,7 @@ html{
 header{
     background-color: rgba($color: #000000, $alpha: 0.6);
     padding-top: 12px;
+    margin-bottom: 50px;
     height: 50px;
     .logo{
         float: left;
@@ -41,7 +43,6 @@ header{
 }
 
 main{
-    margin-top: 50px;
     nav{
         position: absolute;
         top: -2em;
@@ -50,7 +51,7 @@ main{
         ul{
             height: 2rem;
             li{
-                font-size: 0.75rem;
+                font-size: 0.85rem;
                 float: left;
                 padding-right: 0.5em;
                 a{
