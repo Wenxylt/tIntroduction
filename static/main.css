@@ -115,7 +115,7 @@ main .wapper article section h2 {
   font-weight: bold;
 }
 
-main .wapper article section .menb-card {
+.menb-card {
   width: 100%;
   margin-bottom: 20px;
   position: relative;
@@ -124,12 +124,12 @@ main .wapper article section .menb-card {
   background-color: #f8f9fa;
 }
 
-main .wapper article section .menb-card .menb-intro {
+.menb-intro {
     overflow: auto;
 }
 
-main .wapper article section .menb-card .menb-intro img {
-    float: left;
+.profile {
+  float: left;
   width: 120px;
   height: 120px;
   margin: 20px 20px 20px 20px;
@@ -137,13 +137,13 @@ main .wapper article section .menb-card .menb-intro img {
   padding: 4px;
 }
 
-main .wapper article section .menb-card .menb-intro .intro-cont {
+.intro-cont {
     float: left;
     width: 70%;
     margin: 20px 0 20px 0;
 }
 
-main .wapper article section .menb-card .menb-intro .intro-cont div {
+.intro-cont div {
   width: 100%;
   margin-bottom: 2px;
   -webkit-box-orient: horizontal;
@@ -182,3 +182,63 @@ footer p {
   margin: 0 auto;
 }
 /*# sourceMappingURL=aboutus.css.map */
+
+input[type=text] {
+  font-size: 1em;
+  padding: 2px;
+  border: 0;
+  background-color: #f8f9fa;
+  border-bottom: solid 2px #f8f9fa;
+}
+input[type=text]:hover {
+  background-color: #ffffff;
+}
+input[type=text]:focus {
+  border-bottom: solid 2px #2aa198;
+}
+button {
+  float: right;
+  margin: 0em 0em 0em 1em;
+  padding: .2em;
+  background-color: #d8d9da;
+  border:0;
+  font-weight: bold;
+}
+button img {
+  height: 15px;
+  width: 15px;
+  border: 0;
+}
+button:hover {
+  background-color: #6c71c4;
+}
+textarea {
+  width: 100%;
+  margin: 3em 0 1em 0;
+  /* padding: 2%; */ clear:both;
+  display: block;
+  height: 6em;
+  resize:vertical;
+  border: solid 2px #f8f9fa;
+  background-color: #f8f9fa;
+}
+textarea:focus {
+  border: solid 2px #2aa198;
+  background-color: #ffffff;
+}
+textarea:hover {
+  background-color: #ffffff;
+}
+
+.pair {
+  display:flex;
+  align-items: center;
+}
+.pair .key {
+  flex-grow: 2;
+}
+.pair .value {
+  flex-grow: 8;
+}
+.pair button {
+}
