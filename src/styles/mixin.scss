@@ -1,0 +1,10 @@
+@mixin wapper {
+    min-width: 900px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@mixin blueLink {
+    color: $dark; 
+    &:hover{ color: $blue;}
+}
