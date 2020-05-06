@@ -12,7 +12,7 @@
           <h4>团队成员</h4>
           <div class="menb-card" v-for="(intro,index) in intros" :key="index">
             <div class="menb-intro">
-              <img alt="name" :src="image" />
+              <img alt="picture" :src="'media/'+intro.profilename" />
               <!-- 这里是介绍 -->
               <div class="intro-cont">
                 <div>
@@ -35,7 +35,6 @@
 <script>
 import axios from 'axios'
 import MainNav from '@/components/MainNav.vue'
-import image from '@/assets/name.jpg'
 
 export default {
   name: 'AboutUs',
@@ -49,6 +48,7 @@ export default {
         {
           id: 0,
           name: '陈晓璐',
+          profilename: 'name.jpg',
           attr: [
             {
               attr: '爱好',
@@ -64,17 +64,14 @@ export default {
             }
           ]
         }
-      ],
-      image
+      ]
     }
   },
   mounted() {
-    debugger
     this.getIntros()
   },
   methods: {
     getIntros() {
-      debugger
       const service = axios.create({
         baseURL: '', // url = base url + request url
         timeout: 5000 // request timeout
