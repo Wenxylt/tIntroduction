@@ -22,7 +22,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
-    path('create', views.update_or_create, name="create"),
-    path('delete', views.delete, name="delete"),
-    path('update', views.update_or_create, name="update"),
+    path('intro', views.get_intro, name="intro"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
